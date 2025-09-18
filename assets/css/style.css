@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+}
+
+.container{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+
+
+#header {
+  
+   background-color: black;
+   color: white;
+   height: 60px;
+}
+
+
+#header .header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#header .header-wrapper .menu{
+    display: flex;
+    list-style: none;
+    
+}
+
+#header .header-wrapper .menu li{
+  margin-left: 10px;
+}
+
+#header .header-wrapper .right img{
+   border-radius: 50%;
+}
+
+/* */
+
+#layout .layout-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#layout .layout-wrapper .left {
+    background-color: black;
+    height: 89vh;
+    width: 40px;
+    color: white;
+    text-align: center;
+}
+
+#layout .layout-wrapper .right {
+    background-color: red;
+    height: 89vh;
+    width: calc(100% - 40px); /* soldaki 40px çıkar */
+}
