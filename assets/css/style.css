@@ -1,63 +1,97 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+
+* {
     margin: 0;
+
 }
 
-.container{
+body {
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
 }
 
 
-
-
-#header {
-  
-   background-color: black;
-   color: white;
-   height: 60px;
+/* Header */
+header {
+    position: sticky;
+    top: 0;
 }
 
+#header {
+    background-color: black;
+    color: white;
+    height: 60px;
+}
 
-#header .header-wrapper{
+#header .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 50px;
 }
 
+#header .header-wrapper .logo {
+    color: rgb(255, 70, 70);
+    font-size: 30px;
+}
 
-#header .header-wrapper .menu{
+#header .header-wrapper .menu {
     display: flex;
     list-style: none;
-    
+    gap: 30px;
+
 }
 
-#header .header-wrapper .menu li{
-  margin-left: 10px;
+#header .header-wrapper .menu li .active {
+    font-weight: bold;
+    color: purple;
+
 }
 
-#header .header-wrapper .right img{
-   border-radius: 50%;
+#header .header-wrapper .menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+#header .header-wrapper .menu li a:hover {
+    color: purple;
+}
+
+#header .header-wrapper .right img {
+    border-radius: 50%;
 }
 
 /* */
 
-#layout .layout-wrapper{
+#layout .layout-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #layout .layout-wrapper .left {
-    background-color: black;
-    height: 89vh;
-    width: 40px;
+    background-color: green;
+    height: calc(100vh - 60px);
+    width: 50px;
     color: white;
     text-align: center;
+
+    position: fixed;
+    top: 60px;
+    left: 0;
 }
 
 #layout .layout-wrapper .right {
     background-color: red;
-    height: 89vh;
-    width: calc(100% - 40px); /* soldaki 40px çıkar */
+    margin-left: 50px;
+    height: 700px;
+    width: 100%;
 }
