@@ -28,14 +28,17 @@ header {
 #header {
     background-color: black;
     color: white;
-    height: 60px;
+
 }
 
 #header .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
+
     padding: 0 50px;
+    
 }
 
 #header .header-wrapper .logo {
@@ -65,9 +68,52 @@ header {
     color: purple;
 }
 
+#header .header-wrapper .right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 #header .header-wrapper .right img {
     border-radius: 50%;
+    height: 32px;
+    width: 32px;
 }
+
+#header .header-wrapper .right .profile-text-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 1;
+   
+}
+
+
+#header .header-wrapper .right .toggle{
+    width: 40px;
+    background-color: white;
+    height: 20px;
+    border-radius: 30px;
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+#header .header-wrapper .right .toggle-icon{
+    color: goldenrod;
+}
+
+#header .header-wrapper .right .toggle-ball{
+    background-color: black;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    position:absolute;
+    right: 1px;
+}
+
 
 /* */
 
@@ -79,7 +125,7 @@ header {
 
 #layout .layout-wrapper .left {
     background-color: green;
-    height: calc(100vh - 60px);
+    height: 100vh;
     width: 50px;
     color: white;
     text-align: center;
