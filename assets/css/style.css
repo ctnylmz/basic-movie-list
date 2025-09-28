@@ -38,7 +38,7 @@ header {
     height: 60px;
 
     padding: 0 50px;
-    
+
 }
 
 #header .header-wrapper .logo {
@@ -80,37 +80,37 @@ header {
     width: 32px;
 }
 
-#header .header-wrapper .right .profile-text-container{
+#header .header-wrapper .right .profile-text-container {
     display: flex;
     align-items: center;
     gap: 5px;
     line-height: 1;
-   
+
 }
 
 
-#header .header-wrapper .right .toggle{
+#header .header-wrapper .right .toggle {
     width: 40px;
     background-color: white;
     height: 20px;
     border-radius: 30px;
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-around;
     position: relative;
 }
 
-#header .header-wrapper .right .toggle-icon{
+#header .header-wrapper .right .toggle-icon {
     color: goldenrod;
 }
 
-#header .header-wrapper .right .toggle-ball{
+#header .header-wrapper .right .toggle-ball {
     background-color: black;
     width: 18px;
     height: 18px;
     cursor: pointer;
     border-radius: 50%;
-    position:absolute;
+    position: absolute;
     right: 1px;
 }
 
@@ -123,18 +123,18 @@ header {
     align-items: center;
 }
 
-#layout .layout-wrapper .left{
+#layout .layout-wrapper .left {
     background-color: black;
     height: 100vh;
     width: 50px;
     color: white;
-   
+
 
     position: fixed;
     top: 60px;
     left: 0;
 
- 
+
 
     display: flex;
     flex-direction: column;
@@ -142,15 +142,74 @@ header {
     gap: 40px;
 }
 
-#layout .layout-wrapper .left i{
-  color: white;
-  cursor: pointer;
-  font-size: 20px;
+#layout .layout-wrapper .left i {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#layout .layout-wrapper .left i:hover {
+    color: purple;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 #layout .layout-wrapper .right {
-    background-color: red;
+
     margin-left: 50px;
-    height: 700px;
     width: 100%;
 }
+
+/* */
+
+main #layout .layout-wrapper .right .featured-contact {
+
+    background: url("/assets/img/spiderman.jpg");
+    height: calc(100vh - 60px);
+    background-size: 100% 100%;
+}
+
+main #layout .layout-wrapper .right .featured-contact .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 400px;
+    padding: 0 48px;
+}
+
+
+main #layout .layout-wrapper .right .featured-contact .content-wrapper img {
+
+    width: 100%;
+}
+
+main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-desc {
+    width: 100%;
+    background-color: rgb(255, 255, 255,0.5);
+    padding: 10px;
+}
+
+main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-buttons  {
+    display: flex;
+    gap: 8px;
+}
+
+main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-buttons  button{
+    display: flex;
+    gap: 8px;
+    padding: 10px 25px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-buttons  .info-button{
+   background-color: rgb(145, 142, 142,0.5 );
+   color: white;
+}
+
+
+
