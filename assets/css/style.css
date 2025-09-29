@@ -211,5 +211,29 @@ main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured
    color: white;
 }
 
+/* */
+main #layout .layout-wrapper .right .move-list-filter {
+   background-color: black;
+    color: white;
+   
+}   
+
+main #layout .layout-wrapper .right .move-list-filter .filter-wrapper{
+   background-color: black;
+ 
+   padding: 20px;
+}   
+
+
+main #layout .layout-wrapper .right .move-list-filter  .filter-wrapper select{
+   background-color: black;
+   color: white;
+   padding: 7px 0;
+   width: 125px;
+    margin: 20px 0 20px 20px;
+
+}
+
+
 
 
