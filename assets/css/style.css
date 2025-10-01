@@ -185,16 +185,16 @@ main #layout .layout-wrapper .right .featured-contact .content-wrapper img {
 
 main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-desc {
     width: 100%;
-    background-color: rgb(255, 255, 255,0.5);
+    background-color: rgb(255, 255, 255, 0.5);
     padding: 10px;
 }
 
-main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-buttons  {
+main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-buttons {
     display: flex;
     gap: 8px;
 }
 
-main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-buttons  button{
+main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-buttons button {
     display: flex;
     gap: 8px;
     padding: 10px 25px;
@@ -206,34 +206,70 @@ main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured
     font-weight: bold;
 }
 
-main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-buttons  .info-button{
-   background-color: rgb(145, 142, 142,0.5 );
-   color: white;
+main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-buttons .info-button {
+    background-color: rgb(145, 142, 142, 0.5);
+    color: white;
 }
 
 /* */
 main #layout .layout-wrapper .right .move-list-filter {
-   background-color: black;
+    background-color: black;
     color: white;
-   
-}   
 
-main #layout .layout-wrapper .right .move-list-filter .filter-wrapper{
-   background-color: black;
- 
-   padding: 20px;
-}   
+}
+
+main #layout .layout-wrapper .right .move-list-filter .filter-wrapper {
+    background-color: black;
+
+    padding: 20px;
+}
 
 
-main #layout .layout-wrapper .right .move-list-filter  .filter-wrapper select{
-   background-color: black;
-   color: white;
-   padding: 7px 0;
-   width: 125px;
+main #layout .layout-wrapper .right .move-list-filter .filter-wrapper select {
+    background-color: black;
+    color: white;
+    padding: 7px 0;
+    width: 125px;
     margin: 20px 0 20px 20px;
 
 }
 
+/* */
+
+main #layout .layout-wrapper .right .move-list-container {
+    margin-left: 37px;
+}
+
+main #layout .layout-wrapper .right .move-list-container .title {
+    padding: 16px 0;
+}
+
+main #layout .layout-wrapper .right .move-list-container .move-list {
+    list-style: none;
+    padding: 0;
+    padding: 0px 0 24px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+main #layout .layout-wrapper .right .move-list-container .move-list:hover .movie-list-item .movie-info {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item {
+    width: 250px;
+
+}
 
 
+main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item .movie-img {
+    width: 100%;
+}
 
+main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item .movie-info {
+    display: none;
+
+}
