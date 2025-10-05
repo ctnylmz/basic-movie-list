@@ -237,8 +237,15 @@ main #layout .layout-wrapper .right .move-list-filter .filter-wrapper select {
 /* */
 
 main #layout .layout-wrapper .right .move-list-container {
+    background-color: black;
+    height: 300px;
+    color: white;
+}
+
+main #layout .layout-wrapper .right .move-list-container .movie-list-wrapper{
     margin-left: 37px;
 }
+
 
 main #layout .layout-wrapper .right .move-list-container .title {
     padding: 16px 0;
@@ -248,28 +255,81 @@ main #layout .layout-wrapper .right .move-list-container .move-list {
     list-style: none;
     padding: 0;
     padding: 0px 0 24px 0;
+
+ 
+
+    display: flex;
+    gap: 24px;
+
     cursor: pointer;
-    position: relative;
 }
 
-main #layout .layout-wrapper .right .move-list-container .move-list:hover .movie-list-item .movie-info {
-    display: block;
-    position: absolute;
-    top: 50px;
-    left: 0;
-}
+
 
 main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item {
     width: 250px;
+    position: relative;
+    height: 70px;
+    transition: all 1s linear;
 
 }
+
+main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item:hover {
+    width: 300px;
+    height: 120px;
+}
+
 
 
 main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item .movie-img {
     width: 100%;
 }
 
+
+main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item:hover .movie-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    opacity: 1;
+    /* Görünür hale gelsin */
+    visibility: visible;
+    transition-delay: 0.5s;
+    /* 1 saniye bekledikten sonra başlasın */
+}
+
+
 main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item .movie-info {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s linear 0s;
+}
+
+main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item .movie-info .movie-title {
+    background-color: rgba(40, 40, 40, 0.4);
+    color: white;
+    font-size: 28px;
+    padding: 0 10px;
+    font-weight: bold;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item .movie-info .movie-item-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item .movie-info .movie-item-buttons i {
+    color: white;
 
 }
