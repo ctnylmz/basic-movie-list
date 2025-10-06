@@ -1,67 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
-
 * {
     margin: 0;
-
 }
 
 body {
     font-family: "Electrolize", sans-serif;
     font-weight: 400;
     font-style: normal;
+    overflow-X: hidden;
+
 }
 
 .container {
-    max-width: 1200px;
     width: 95%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-
 /* Header */
+
 header {
     position: sticky;
     top: 0;
 }
 
 #header {
-    background-color: black;
     color: white;
-
+    background-color: black;
 }
 
 #header .header-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+
     height: 60px;
-
     padding: 0 50px;
-
 }
 
 #header .header-wrapper .logo {
-    color: rgb(255, 70, 70);
     font-size: 30px;
+
+    color: rgb(255, 70, 70);
 }
 
 #header .header-wrapper .menu {
     display: flex;
-    list-style: none;
-    gap: 30px;
 
+    list-style: none;
+
+    gap: 30px;
 }
 
 #header .header-wrapper .menu li .active {
     font-weight: bold;
-    color: purple;
 
+    color: purple;
 }
 
 #header .header-wrapper .menu li a {
-    color: white;
     text-decoration: none;
+
+    color: white;
 }
 
 #header .header-wrapper .menu li a:hover {
@@ -71,33 +72,38 @@ header {
 #header .header-wrapper .right {
     display: flex;
     align-items: center;
+
     gap: 16px;
 }
 
 #header .header-wrapper .right img {
-    border-radius: 50%;
-    height: 32px;
     width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
 }
 
 #header .header-wrapper .right .profile-text-container {
-    display: flex;
-    align-items: center;
-    gap: 5px;
     line-height: 1;
 
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
 }
 
-
 #header .header-wrapper .right .toggle {
-    width: 40px;
-    background-color: white;
-    height: 20px;
-    border-radius: 30px;
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: relative;
+
+    width: 40px;
+    height: 20px;
+
+    border-radius: 30px;
+    background-color: white;
 }
 
 #header .header-wrapper .right .toggle-icon {
@@ -105,231 +111,261 @@ header {
 }
 
 #header .header-wrapper .right .toggle-ball {
-    background-color: black;
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-    border-radius: 50%;
     position: absolute;
     right: 1px;
+
+    width: 18px;
+    height: 18px;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+    background-color: black;
 }
 
-
-/* */
+/*  */
 
 #layout .layout-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 #layout .layout-wrapper .left {
-    background-color: black;
-    height: 100vh;
-    width: 50px;
-    color: white;
-
-
     position: fixed;
     top: 60px;
     left: 0;
 
-
-
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+
+    width: 50px;
+    height: 100vh;
+
+    color: white;
+    background-color: black;
+
     gap: 40px;
 }
 
 #layout .layout-wrapper .left i {
-    color: white;
-    cursor: pointer;
     font-size: 20px;
+
+    cursor: pointer;
+
+    color: white;
 }
 
 #layout .layout-wrapper .left i:hover {
-    color: purple;
-    cursor: pointer;
     font-size: 20px;
+
+    cursor: pointer;
+
+    color: purple;
 }
 
 #layout .layout-wrapper .right {
-
-    margin-left: 50px;
     width: 100%;
+    margin-left: 50px;
 }
 
-/* */
+/*  */
 
 main #layout .layout-wrapper .right .featured-contact {
+    height: calc(100vh - 60px);
 
     background: url("/assets/img/spiderman.jpg");
-    height: calc(100vh - 60px);
     background-size: 100% 100%;
 }
 
 main #layout .layout-wrapper .right .featured-contact .content-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+
     max-width: 400px;
     padding: 0 48px;
+
+    gap: 24px;
 }
 
-
 main #layout .layout-wrapper .right .featured-contact .content-wrapper img {
-
     width: 100%;
 }
 
 main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-desc {
     width: 100%;
-    background-color: rgb(255, 255, 255, 0.5);
     padding: 10px;
+
+    background-color: rgb(255, 255, 255, 0.5);
 }
 
 main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-buttons {
     display: flex;
+
     gap: 8px;
 }
 
 main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-buttons button {
-    display: flex;
-    gap: 8px;
-    padding: 10px 25px;
-    border-radius: 2px;
-    border: none;
-    outline: none;
-    cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+
+    display: flex;
+
+    padding: 10px 25px;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 2px;
+    outline: none;
+
+    gap: 8px;
 }
 
 main #layout .layout-wrapper .right .featured-contact .content-wrapper .featured-buttons .info-button {
-    background-color: rgb(145, 142, 142, 0.5);
     color: white;
+    background-color: rgb(145, 142, 142, 0.5);
 }
 
-/* */
-main #layout .layout-wrapper .right .move-list-filter {
-    background-color: black;
-    color: white;
+/*  */
 
+main #layout .layout-wrapper .right .move-list-filter {
+    color: white;
+    background-color: black;
 }
 
 main #layout .layout-wrapper .right .move-list-filter .filter-wrapper {
-    background-color: black;
-
     padding: 20px;
-}
 
+    background-color: black;
+}
 
 main #layout .layout-wrapper .right .move-list-filter .filter-wrapper select {
-    background-color: black;
-    color: white;
-    padding: 7px 0;
     width: 125px;
-    margin: 20px 0 20px 20px;
+    margin: 20px 0 10px 20px;
+    padding: 7px 0;
 
+    color: white;
+    background-color: black;
 }
 
-/* */
+/*  */
 
 main #layout .layout-wrapper .right .move-list-container {
-    background-color: black;
-    height: 300px;
+
+    padding: 0px 0 30px 0;
+
     color: white;
+    background-color: black;
+   
+
 }
 
-main #layout .layout-wrapper .right .move-list-container .movie-list-wrapper{
+main #layout .layout-wrapper .right .move-list-container .movie-list-wrapper {
+    margin-bottom: 24px;
     margin-left: 37px;
-}
 
+}
 
 main #layout .layout-wrapper .right .move-list-container .title {
     padding: 16px 0;
 }
 
 main #layout .layout-wrapper .right .move-list-container .move-list {
-    list-style: none;
+    display: flex;
+
     padding: 0;
     padding: 0px 0 24px 0;
 
- 
+    list-style: none;
 
-    display: flex;
     gap: 24px;
+    
 
-    cursor: pointer;
 }
 
-
-
 main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item {
-    width: 250px;
     position: relative;
-    height: 70px;
+
+    min-width: 300px;
+    height: 150px;
+
+    cursor: pointer;
     transition: all 1s linear;
 
 }
 
 main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item:hover {
-    width: 300px;
-    height: 120px;
+    width: 350px;
+    height: 160px;
 }
 
-
+main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item:hover .movie-img {
+    opacity: 0.5;
+}
 
 main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item .movie-img {
     width: 100%;
+    height: 100%;
 }
 
-
 main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item:hover .movie-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 48px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -25%);
-    opacity: 1;
-    /* Görünür hale gelsin */
+
+    display: flex;
     visibility: visible;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
     transition-delay: 0.5s;
-    /* 1 saniye bekledikten sonra başlasın */
+    transform: translate(-50%, -50%);
+
+    opacity: 1;
+
+    gap: 48px;
+
 }
 
-
 main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item .movie-info {
-    opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0s linear 0s;
+
+    opacity: 0;
 }
 
 main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item .movie-info .movie-title {
-    background-color: rgba(40, 40, 40, 0.4);
-    color: white;
     font-size: 28px;
-    padding: 0 10px;
     font-weight: bold;
+
+
     max-width: 200px;
+    padding: 0 10px;
+
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
+
+    color: white;
+    background-color: rgba(40, 40, 40, 0.4);
 }
 
 main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item .movie-info .movie-item-buttons {
     display: flex;
     align-items: center;
-    gap: 20px;
 
+    gap: 20px;
 }
 
 main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item .movie-info .movie-item-buttons i {
-    color: white;
+    font-size: 20px;
 
+    transition: 0.5s all linear;
+
+    color: white;
+}
+
+main #layout .layout-wrapper .right .move-list-container .move-list .movie-list-item .movie-info .movie-item-buttons i:hover {
+    color: black;
 }
